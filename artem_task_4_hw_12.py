@@ -1,4 +1,4 @@
-class Robot():
+class Robot:
     material = "metal"
     os = "Microsoft"
 
@@ -7,9 +7,8 @@ class Robot():
         self.tall = tall
         self.design = design
 
-    def view_area(self):
-        print(locals())
+    def __str__(self):
+        return locals()
 
 
 terminator = Robot()
-terminator.view_area()
